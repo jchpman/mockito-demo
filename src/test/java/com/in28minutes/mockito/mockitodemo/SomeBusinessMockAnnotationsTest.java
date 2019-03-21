@@ -13,6 +13,7 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class SomeBusinessMockAnnotationsTest {
 
+    // With using @Mock, @InjectMocks, etc
     @Mock
     DataService dataServiceMock;
 
@@ -26,6 +27,7 @@ public class SomeBusinessMockAnnotationsTest {
         assertEquals(24, businessImpl.findTheGreatestFromAllData());
     }
 
+    // Without using @Mock, @InjectMocks, etc
     @Test
     public void testFindTheGreatestFromAllData_ForOneValue(){
 
